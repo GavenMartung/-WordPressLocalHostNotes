@@ -1,0 +1,14 @@
+- Run MAMP
+- Install Wordpress.org download file and change the file name to your website name
+- Go to MAMP Preferences and point your website folder to the Wordpress folder with your website Name
+- Click Start WebPage
+- Go to phpMyAdmin and create a database
+- Find and Note Your 
+ Database name 
+ Database username 
+ Database password 
+ Database host 
+- Delete the /MAMP/ from the url to open up the wordpress intro screen
+- Continue and enter in the details asked
+- Continue with the installation Process and make a UserName and Password
+- Your website should be up and running.
