@@ -1,0 +1,9 @@
+- Locate the themes folder in wp-content folder of your Wordpress.org folder
+- Go to underscores.me and generate a starter theme
+- Download and then unzip it in the themes folder
+- Activate the generated theme in your wordpress dashboard, All the styles should be stripped
+- Open the generated theme folder with your chosen text editor, VS is used in these notes
+- The index.php file combines together the header.php, a loop of content.php files and then our footer.php file at the bottom.
+- Go to index.php and delete getsidebar() from code
+- Go to content.php and comment out posted on and posted by.
+- In Content.php, header.php, and footer.php delete whatever code you need. Mostly all of it if you want to start from scratch.
