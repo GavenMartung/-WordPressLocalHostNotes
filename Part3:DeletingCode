@@ -1,0 +1,62 @@
+- Delete this from header.php
+
+<?php
+		if ( is_singular() ) :
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		else :
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
+
+		if ( 'post' === get_post_type() ) :
+			?>
+			<div class="entry-meta">
+				<?php
+				//gmportfolio_posted_on();
+				//gmportfolio_posted_by();
+				?>
+			</div><!-- .entry-meta -->
+		<?php endif; ?>
+
+- Also this
+
+<div class="entry-content">
+		<?php
+		the_content(
+			sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gmportfolio' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				wp_kses_post( get_the_title() )
+			)
+		);
+
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'gmportfolio' ),
+				'after'  => '</div>',
+			)
+		);
+		?>
+	</div><!-- .entry-content -->
+
+- And lastly 
+	<footer class="entry-footer">
+		<?php gmportfolio_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
+
+- Delete section in style.css except normalize and accessibility
+
+- Create a css folder and create custom.css
+- When linking things for wordpress it has to be the exact location
+
+- We load the custom.css using wp enqueu style within function.php
+
+- wp_enqueue_style( 'gmportfolio-custom',  get_template_directory_uri() . '/css/custom.css');
+
+- Use that line of code to link within functions under the scripts section.
