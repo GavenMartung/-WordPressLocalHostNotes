@@ -1,0 +1,20 @@
+HTML/CSS ShortCut Notes
+
+HTML/CSS -Front End
+JS, Ruby -Back End
+
+Header Section
+
+margin-left: auto; 
+margin-right: auto;
+-These 2 Lines of Code Center and Align the respective object to the center
+
+
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+-This creates a flexbox to allow position and alignment of the header.
+	Make sure you have a width of 100% on each element using these
+		lines of code.This should be on the header.
+
+-We can then use margins/padding to position elements in certain aspects of the header
