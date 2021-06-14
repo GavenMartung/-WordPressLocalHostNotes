@@ -18,3 +18,4 @@ align-items: flex-end;
 		lines of code.This should be on the header.
 
 -We can then use margins/padding to position elements in certain aspects of the header
+-Always section off each portion of the website you are using. You can use classes to specify.
