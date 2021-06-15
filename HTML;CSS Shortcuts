@@ -20,3 +20,4 @@ align-items: flex-end;
 -We can then use margins/padding to position elements in certain aspects of the header
 -Always section off each portion of the website you are using. You can use classes to specify.
 -content.php is the body of the site
+-Color Coating backgrounds for each section allows the programmer to see the exact visuals of each element. This is advised when positioning certain things.
