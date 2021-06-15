@@ -19,3 +19,4 @@ align-items: flex-end;
 
 -We can then use margins/padding to position elements in certain aspects of the header
 -Always section off each portion of the website you are using. You can use classes to specify.
+-content.php is the body of the site
