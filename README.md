@@ -1,2 +1,2 @@
 # -WordPressLocalHostNotes
-Notes for MAMP and Wordpress LocalHosting.
+Notes for MAMP and Wordpress LocalHosting..
